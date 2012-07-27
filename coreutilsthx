@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mkdir -p $HOME/bin/coreutils && \
+cd $HOME/bin/coreutils       && \
+wget --no-verbose http://n950.japh.se/coreutils_8.5-1maemo2+0m6_armel.deb && \
+dpkg -x 'coreutils_8.5-1maemo2+0m6_armel.deb' && \
+printf "export PATH=$PWD/bin:$PATH >> $HOME/.profile"
+hash -r
+echo;echo

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# http://harmattan-dev.nokia.com/release/N950-39-5/Linux_OCF_39-5_RM680-RM680-OEM1.bin
+# http://harmattan-dev.nokia.com/release/N950/firmware/Linux_OCF_02-6_RM680-RM680-OEM1.bin
+
+
+
+echohl() {
+  printf -- "- \e[30;41m$@\e[m\n"
+}
+
+
+echohl "Grabbing PR1.2"
+wget http://harmattan-dev.nokia.com/release/N950/firmware/Linux_OCF_02-6_RM680-RM680-OEM1.bin
+if [[ $? == 0 ]]
+then
+  chmod +x Linux_OCF_*
+  su -c 'while true
+  do
+    modprobe -r cdc_phonet phonet
+    ./Linux_OCF_02-6_RM680-RM680-OEM1.bin
+    sleep .1
+  done'
+fi

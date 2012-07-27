@@ -1,0 +1,30 @@
+# /etc/apt/sources.list.d/nick.list
+# n950, harmattan 1.2
+# http://wiki.meego.com/Community_Office/Community_device_program/Nokia/Development_repos
+
+# main repos (rzr is the current shared community repo)
+deb http://repo.pub.meego.com/home:/rzr:/harmattan/MeeGo_1.2_Harmattan_Maemo.org_MeeGo_1.2_Harmattan_standard/ ./
+# we'll see how they behave... might want to disable it.
+deb http://harmattan-dev.nokia.com/ harmattan/sdk free non-free
+
+
+# some other repos for specific uses
+#deb http://repo.pub.meego.com/home:/CaCO3/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/andreagrandi/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/elleo/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/fiferboy/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/jaffa/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/khertan/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/nimnes/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/vgrade:/twingo/Harmattan/ ./
+#deb http://repo.pub.meego.com/home:/rlinfati/harmattan/ ./
+#deb http://sheeplauncher.net/debs/ ./
+#deb http://repo.pub.meego.com/home:/roman4/Harmattan ./
+#deb http://repo.pub.meego.com/home:/aaporantalainen/harmattan/ ./
+#deb http://repo.pub.meego.com/home:/druid23/Harmattan/ ./
+
+# Libraries & tools
+deb http://repo.pub.meego.com/home:/jokylanp/MeeGo_1.2_Harmattan/ ./
+deb http://repo.pub.meego.com/home:/sandst1:/harmattan/MeeGo_1.2_Harmattan/ ./
+deb http://repo.pub.meego.com/home:/tjyrinki/harmattan/ ./
+deb http://repo.pub.meego.com/home:/javispedro:/SDL/harmattan/ ./

@@ -1,0 +1,224 @@
+   [1]Nokia Developer
+
+Nokia N950 OneClickFlashers
+
+Introduction
+
+   Use the Nokia N950 OneClickFlashers to update a Nokia N950 phone to the
+   an appropriate firmware version with a computer running Microsoft
+   Windows, Apple Mac OS X, or Linux. This may be necessary in order to
+   update a device with older software image to the newer software, or to
+   return a malfunctioning device to a known state.
+
+   This page provides OneClickFlashers for firmware versions 1.1 and 1.2.
+
+   Note: The flashers provide no means for downgrading the firmware! So
+   once you've installed a more recent version, there is no way to return
+   to an older version.
+
+   Note: These tools are to be used only with the N950 device, do not
+   attempt to update your N9 device with them!
+
+   This [2]blog post in the N9 Developer blog provides information about
+   the naming scheme used for the firmware.
+
+   This page offers both the Global and Chinese variants of the firmware.
+
+Downloads
+
+Harmattan 1.1 (2.2011.39-5, released 2011-10-25)
+
+           File          Size             MD5 Checksum
+   [3]Linux / Global    945 MiB 7adf7e021647afa9349a8a4294021296
+   [4]Mac OS X / Global 945 MiB 504acc04ce75aca076b89a8a82a35362
+   [5]Windows / Global  953 MiB ffe09a83dc5c09afd28ba9152d049290
+
+Harmattan 1.2 (3.2012.02-6, released 2012-01-25)
+
+          File           Size            MD5 Checksum
+   [6]Linux / Global    957 MiB 94876a626689f59a59befe55581452ad
+   [7]Mac OS X / Global 957 MiB 88a1c3e923017b193ed3e354091592e6
+   [8]Windows / Global  965 MiB f793cf247c8fa22f261965c344967611
+
+Harmattan 1.2, Chinese variant (3.2012.02-6, released 2012-01-25)
+
+   Note: You cannot return from a Chinese variant to the corresponding
+   Global variant! So unless you are developing for the applications for
+   the Chinese markets, do not install the Chinese variant on your device.
+          File           Size            MD5 Checksum
+   [9]Linux / China     973 MiB 7be143b3201322385982f931212739d5
+   [10]Mac OS X / China 973 MiB 54a532f76ee1c07112ce08cbccefbdab
+   [11]Windows / China  981 MiB f51d55eba953a286fc3b0e7f8ba7ac5b
+
+How to check a device's firmware version and variant
+
+   To check the firmware version on your device: open Settings and tap
+   About Product.
+
+Short instructions
+
+    1. Download the appropriate OneClickFlasher.
+    2. Power off your device by holding down the power key for at least 8
+       seconds.
+    3. Start the OneClickFlasher (In Windows, use Windows Explorer; in
+       Linux and Mac OS X, use a terminal window).
+    4. Follow the instructions on the screen and wait until the device is
+       flashed.
+
+Detailed instructions
+
+   Note: Do not connect the device to the computer until the instructions
+   on the screen tell you to.
+
+Windows
+
+    1. Double-click the downloaded file in Windows Explorer.
+    2. Click "Yes".
+    3. In Terms & Conditions, click Accept.
+    4. Wait until the following text is displayed:
+
+                Suitable USB interface (bootloader/phonet) not found,
+                waiting...
+
+    5. Ensure that the device is switched off by holding the power key
+       down 8+ seconds, then connect the device and the computer with the
+       USB cable.
+    6. When you connect the cable, the device displays the text "NOKIA"
+       and switches on automatically.
+    7. If an "Installing Driver Device Software" notification appears on
+       the lower right corner of your PC screen, click the notification.
+       Immediately click "Skip" for obtaining driver software from Windows
+       Update.
+
+                Note: You must click the link during the time that the USB
+                icon is displayed on the Harmattan device. If you click
+                the link too late, the device starts to boot and you must
+                start the flashing procedure again from step 4. In that
+                case, you may need to repeat the procedure 1-2 times
+                before the flashing is successful.
+
+    8. Wait until the required drivers are installed and the device is
+       flashed. This may take up to 30 minutes.
+    9. When flashing is complete, the following text is displayed:
+
+                Updating SW release
+                Success
+                Status: 0
+                Press Enter to exit & Unplug the USB cable from the device
+                to boot new flashed image...
+
+   10. Press Enter on the computer keyboard.
+   11. Disconnect the USB cable. The device boots up and is ready for use.
+
+Linux
+
+    1. Use the following commands in a terminal window:
+
+                chmod +x <file name of the downloaded binary>
+                sudo ./<file name of the downloaded binary>
+                Note: You need sudo privileges to run the command.
+
+    2. Accept the terms and conditions.
+    3. Wait until the following text is displayed:
+
+                Suitable USB interface (bootloader/phonet) not found,
+                waiting...
+
+    4. Ensure that the device is switched off by holding down the power
+       key at least 8+ seconds, then connect the device and the computer
+       with the USB cable.
+    5. When you connect the cable, the device switches on automatically
+       and the flashing sequence starts.
+    6. Wait until the device is flashed. This may take a while, even up to
+       30 minutes. When flashing is complete, the following text is
+       displayed:
+
+                Flashing finished at <timestamp>
+                Press Enter to exit
+                Unplug the USB cable from the device to boot new flashed
+                image ...
+
+    7. Press Enter on the computer keyboard.
+    8. Disconnect the USB cable. The device boots up and is ready for use.
+
+Mac OS X
+
+    1. Use the following commands in a terminal window:
+
+                chmod +x <file name of the downloaded binary>
+                ./<file name of the downloaded binary>
+
+    2. Accept the terms and conditions.
+    3. Wait until the following text is displayed:
+
+                Suitable USB interface (bootloader/phonet) not found,
+                waiting...
+
+    4. Ensure that the device is switched off by holding down the power
+       key at least 8+ seconds, then connect the device and the computer
+       with the USB cable.
+    5. When you connect the cable, the device displays the text "NOKIA"
+       and switches on automatically.
+    6. Wait until the device is flashed. This may take a while, even up to
+       30 minutes. When flashing is complete, the following text is
+       displayed:
+
+                Flashing finished at <timestamp>
+                Press Enter to exit
+                Unplug the USB cable from the device to boot new flashed
+                image ...
+
+    7. Press Enter on the computer keyboard.
+    8. Disconnect the USB cable. The device boots up and is ready for use.
+
+Troubleshooting
+
+   Occasionally the OneClickFlasher does not immediately recognise a
+   device when it is plugged in. Unplug the device, power it off by
+   holding down the power key for 8+ seconds (even if the screen is black,
+   and the device appears to be powered off) and plug it in again.
+
+   Occasionally the flasher fails to run to completion. Try executing the
+   OneClickFlasher again.
+
+   However, if the flasher persistently fails during the emmc-erasing
+   stage, contact the Nokia organization you received this phone from for
+   further instructions.
+
+   In Windows, the USB autodetection and driver installation may cause
+   problems. You may need to connect, wait for drivers, disconnect cable,
+   power off the device, and reconnect a few times. If plugging and
+   unplugging the cable does not solve the problem and the flasher still
+   waits for suitable USB interface, re-install the USB drivers:
+    1. Stop the OneClickFlasher.
+    2. Click "Control Panel" -> "Programs and Features" and uninstall
+       "Nokia Connectivity Cable Driver" from the list.
+    3. Run OneClickFlasher again, and it will re-install the drivers.
+
+   In Windows environment the Program Compatibility Assistant might appear
+   sometimes after flashing is finished. Click "This program installed
+   correctly" to close the Program Compatibility Assistant.
+
+   In Mac OS X environment executing the flasher occasionally causes
+   keyboard and touchpad unresponsiveness on certain MacBook Pro laptops.
+   Even if the computer can no longer be interacted with, the device
+   flashing finishes successfully. Please ensure that you have saved the
+   contents of all open files before running the OneClickFlasher.
+
+References
+
+   Visible links
+   1. http://www.developer.nokia.com/
+   2. http://www.developer.nokia.com/Community/Blogs/blog/n9-developer/2012/01/23/harmattan-version-numbering-explained
+   3. http://harmattan-dev.nokia.com/release/N950-39-5/Linux_OCF_39-5_RM680-RM680-OEM1.bin
+   4. http://harmattan-dev.nokia.com/release/N950-39-5/Mac_OCF_39-5_RM680-RM680-OEM1.bin
+   5. http://harmattan-dev.nokia.com/release/N950-39-5/Win_OCF_39-5_RM680-RM680-OEM1.exe
+   6. http://harmattan-dev.nokia.com/release/N950/firmware/Linux_OCF_02-6_RM680-RM680-OEM1.bin
+   7. http://harmattan-dev.nokia.com/release/N950/firmware/Mac_OCF_02-6_RM680-RM680-OEM1.bin
+   8. http://harmattan-dev.nokia.com/release/N950/firmware/Win_OCF_02-6_RM680-RM680-OEM1.exe
+   9. http://harmattan-dev.nokia.com/release/N950/firmware/Linux_OCF_02-6_RM680-003-RM680-OEM1.bin
+  10. http://harmattan-dev.nokia.com/release/N950/firmware/Mac_OCF_02-6_RM680-003-RM680-OEM1.bin
+  11. http://harmattan-dev.nokia.com/release/N950/firmware/Win_OCF_02-6_RM680-003-RM680-OEM1.exe
+
+   Hidden links:
+  12. http://www.developer.nokia.com/swipe/
